@@ -1,0 +1,19 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println(add(n));
+		
+	}
+	public static int add(int n){
+	    if(n==1)
+	        return 1;
+	    else{
+	        int sum = n+add(n-1);
+	        return sum;
+	    }      
+	}
+}
