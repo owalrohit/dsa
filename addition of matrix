@@ -1,0 +1,32 @@
+import java.util.Random;
+
+public class Main
+{
+    public static int[][] addMatrix(int [][]m1,int[][]m2){
+        int rows=m1.length;
+        int column=m1[0].length;
+        int result[][]= new int[rows][column];
+        
+    for(int i=0;i<rows;i++){
+        for(int j=0;j<column;j++){
+            result[i][j]=m1[i][j]+m2[i][j];
+        }
+    }
+    return result;
+}
+
+public static void main(String[] args) {
+    int m1[][] = {{1,3,5},{4,6,7}};
+    int m2[][] = {{3,5,6},{3,5,7}};
+    
+    int result[][]=addMatrix(m1,m2);
+    
+    for(int i=0;i<result.length;i++){
+        for(int j=0;j<result[0].length;j++){
+            System.out.print(result[i][j] +" ");
+        }
+    System.out.println();
+    
+	}
+}
+}
